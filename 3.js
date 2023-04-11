@@ -38,11 +38,8 @@ function closestToZero(arr) {
     if (len < 0) len *= -1;
     if (len <= minLen) {
       minLen = len;
-
-      // console.log(">" + minLen);
       if (minIdx != -1) {
         if (arr[i] > 0) {
-          // console.log("haha " + arr[i]);
           ret = arr[i];
         }
       } else {
