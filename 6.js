@@ -21,7 +21,6 @@ function hitungPrima(num) {
     let prima = true;
     for (let i = 2; i < num; i++) {
       if (num % i == 0) {
-        console.log("haha " + i);
         prima = false;
         break;
       }
@@ -30,6 +29,7 @@ function hitungPrima(num) {
     hitungPrima(num - 1);
   } else {
     console.log(cnt);
+    cnt = 0;
   }
 }
 
