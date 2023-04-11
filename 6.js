@@ -14,6 +14,7 @@
  */
 
 let cnt = 0;
+let primaNum = new Array();
 
 function hitungPrima(num) {
   // Write your code here
@@ -25,10 +26,22 @@ function hitungPrima(num) {
         break;
       }
     }
-    if (prima) cnt++;
+    if (prima) {
+      cnt++;
+      primaNum.push(num);
+    }
     hitungPrima(num - 1);
   } else {
-    console.log(cnt);
+    if (cnt == 0) {
+      console.log(cnt);
+    } else {
+      let strPrima = [primaNum[primaNum.length - 1]];
+      for (let i = primaNum.length - 2; i >= 0; i--) {
+        strPrima = strPrima + "," + primaNum[i];
+      }
+      console.log(cnt + " {karena " + strPrima + " adalah prima)");
+      primaNum.length = 0;
+    }
     cnt = 0;
   }
 }
