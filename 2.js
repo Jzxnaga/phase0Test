@@ -30,12 +30,16 @@
 
 // VERSI NON REKURSIF
 function multipleOfSum(data, divider) {
+  let sum;
   for (let i = 0; i < data.length; i++) {
-    let sum = 0;
-    while (data[i] > 0) {
-      sum += data[i] % 10;
-      data /= 10;
+    sum = 0;
+    while (data[i] > 0.9) {
+      let x = Math.floor(data[i] % 10);
+      // console.log("x = " + x);
+      sum += x;
+      data[i] /= 10;
     }
+    // console.log("haha " + sum);
     if (sum % divider == 0) {
       data[i] = true;
     } else {
