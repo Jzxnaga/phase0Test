@@ -46,6 +46,11 @@
  */
 
 function pacman(array) {
+  /**
+   * dari awal sampe akhri array di cek
+   * kalau . atau * C pindah ke tempat itu jadi yang belakangnya jadi . doank
+   * kalau ketemu $ dia ttp kesana tapi mati makanya jadi $ dan belakangnya jadi .
+   */
   for (let i = 0; i < array.length; i++) {
     if (array[i] == ".") {
       array[i] = "C";
