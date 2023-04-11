@@ -77,11 +77,11 @@ function matchIn(applicant) {
   //xyz
   if (applicant.experience >= xyz.experience) {
     let matchedSkills = new Array();
-    for (let i = 0; i < applicant.skills.length; i++) {
-      for (let j = 0; j < xyz.skills.length; j++) {
-        if (applicant.skills[i] == xyz.skills[j]) {
+    for (let i = 0; i < xyz.skills.length; i++) {
+      for (let j = 0; j < applicant.skills.length; j++) {
+        if (xyz.skills[i] == applicant.skills[j]) {
           matchedSkillsCount[0]++;
-          matchedSkills.push(applicant.skills[i]);
+          matchedSkills.push(xyz.skills[i]);
         }
       }
     }
@@ -97,11 +97,11 @@ function matchIn(applicant) {
   //abc
   if (applicant.experience >= abc.experience) {
     let matchedSkills = new Array();
-    for (let i = 0; i < applicant.skills.length; i++) {
-      for (let j = 0; j < abc.skills.length; j++) {
-        if (applicant.skills[i] == abc.skills[j]) {
+    for (let i = 0; i < abc.skills.length; i++) {
+      for (let j = 0; j < applicant.skills.length; j++) {
+        if (abc.skills[i] == applicant.skills[j]) {
           matchedSkillsCount[1]++;
-          matchedSkills.push(applicant.skills[i]);
+          matchedSkills.push(abc.skills[i]);
         }
       }
     }
@@ -116,11 +116,11 @@ function matchIn(applicant) {
   //hij
   if (applicant.experience >= hij.experience) {
     let matchedSkills = new Array();
-    for (let i = 0; i < applicant.skills.length; i++) {
-      for (let j = 0; j < hij.skills.length; j++) {
-        if (applicant.skills[i] == hij.skills[j]) {
+    for (let i = 0; i < hij.skills.length; i++) {
+      for (let j = 0; j < applicant.skills.length; j++) {
+        if (hij.skills[i] == applicant.skills[j]) {
           matchedSkillsCount[2]++;
-          matchedSkills.push(applicant.skills[i]);
+          matchedSkills.push(hij.skills[i]);
         }
       }
     }
@@ -135,11 +135,11 @@ function matchIn(applicant) {
   //klm
   if (applicant.experience >= klm.experience) {
     let matchedSkills = new Array();
-    for (let i = 0; i < applicant.skills.length; i++) {
-      for (let j = 0; j < klm.skills.length; j++) {
-        if (applicant.skills[i] == klm.skills[j]) {
+    for (let i = 0; i < klm.skills.length; i++) {
+      for (let j = 0; j < applicant.skills.length; j++) {
+        if (klm.skills[i] == applicant.skills[j]) {
           matchedSkillsCount[3]++;
-          matchedSkills.push(applicant.skills[i]);
+          matchedSkills.push(klm.skills[i]);
         }
       }
     }
@@ -154,11 +154,11 @@ function matchIn(applicant) {
   //jkl
   if (applicant.experience >= jkl.experience) {
     let matchedSkills = new Array();
-    for (let i = 0; i < applicant.skills.length; i++) {
-      for (let j = 0; j < jkl.skills.length; j++) {
-        if (applicant.skills[i] == jkl.skills[j]) {
+    for (let i = 0; i < jkl.skills.length; i++) {
+      for (let j = 0; j < applicant.skills.length; j++) {
+        if (jkl.skills[i] == applicant.skills[j]) {
           matchedSkillsCount[4]++;
-          matchedSkills.push(applicant.skills[i]);
+          matchedSkills.push(jkl.skills[i]);
         }
       }
     }
