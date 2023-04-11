@@ -46,10 +46,22 @@
  */
 
 function pacman(array) {
-  // Write your code here
-  //ubah
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == ".") {
+      array[i] = "C";
+    } else if (array[i] == "*") {
+      array[i] = "C";
+    } else {
+      array[i] = "$";
+      array[i - 1] = ".";
+      break;
+    }
+    if (i > 0) {
+      array[i - 1] = ".";
+    }
+  }
+  return array;
 }
-console.log("adads");
 console.log(pacman(["*", ".", ".", "*"]));
 // ['.', '.', '.', 'C']
 
